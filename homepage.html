@@ -3,38 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ページのタイトル</title>
-    <link rel="stylesheet" href="style.css"> {/* CSSファイルを読み込む場合 */}
-    <script src="script.js" defer></script> {/* JavaScriptファイルを読み込む場合 */}
+    <title>自己紹介</title>
+    <style>
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+            text-align: left; /* 左揃えに変更 */
+        }
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center; /* タイトルのみ中央揃え */
+        }
+        h2 {
+            color: #555;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        p, ul {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        ul {
+            padding-left: 20px;
+            list-style-type: disc; /* リストマーカーを標準の円に */
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .profile-item {
+            margin-bottom: 10px;
+        }
+        .profile-item strong {
+            display: inline-block;
+            width: 100px; /* ラベルの幅を固定 */
+            font-weight: bold;
+            color: #444;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>自己紹介</h1>
 
-    <header>
-        <h1>サイトのヘッダー</h1>
-        <nav>
-            <ul>
-                <li><a href="#">ナビゲーション1</a></li>
-                <li><a href="#">ナビゲーション2</a></li>
-                <li><a href="#">ナビゲーション3</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="profile-item">
+            <strong>名前：</strong>
+            <span>YMD</span>
+        </div>
 
-    <main>
-        <article>
-            <h2>記事の見出し</h2>
-            <p>ここに記事の本文が入ります。</p>
-        </article>
+        <div class="profile-item">
+            <strong>所属：</strong>
+            <span>株式会社日本大学</span>
+        </div>
 
-        <section>
-            <h2>セクションの見出し</h2>
-            <p>ここにセクションの内容が入ります。</p>
-        </section>
-    </main>
+        <div class="profile-item">
+            <strong>メール：</strong>
+            <span>taro.yamada@example.com</span>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 サイト名</p>
-    </footer>
+        <h2>ご挨拶</h2>
+        <p>
+            はじめまして、YMDと申します。<br>
+            〇〇株式会社で△△部に所属しており、主にわーわー業務に携わっております。<br>
+            新しい技術や情報に常にアンテナを張り、日々の業務に活かせるよう努めています。
+        </p>
 
+        <h2>スキル</h2>
+        <ul>
+            <li>プログラミング言語：Python, JavaScript, HTML/CSS</li>
+            <li>フレームワーク：React, Django</li>
+            <li>その他：データベース設計, UI/UXデザインの基礎知識</li>
+        </ul>
+
+        <h2>趣味・特技</h2>
+        <ul>
+            <li>読書（主にビジネス書や小説）</li>
+            <li>週末のサイクリング</li>
+            <li>写真撮影（風景写真）</li>
+        </ul>
+
+        <h2>ひとこと</h2>
+        <p>
+            持ち前の探求心とコミュニケーション能力を活かして、チームに貢献していきたいと考えております。<br>
+            どうぞよろしくお願いいたします。
+        </p>
+    </div>
 </body>
 </html>
