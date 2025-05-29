@@ -3,110 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介</title>
-    <style>
-        body {
-            font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            background-color: #fff;
-            padding: 30px 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 90%;
-            text-align: left; /* 左揃えに変更 */
-        }
-        h1 {
-            color: #333;
-            font-size: 28px;
-            margin-bottom: 10px;
-            text-align: center; /* タイトルのみ中央揃え */
-        }
-        h2 {
-            color: #555;
-            font-size: 20px;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
-        }
-        p, ul {
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-        ul {
-            padding-left: 20px;
-            list-style-type: disc; /* リストマーカーを標準の円に */
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .profile-item {
-            margin-bottom: 10px;
-        }
-        .profile-item strong {
-            display: inline-block;
-            width: 100px; /* ラベルの幅を固定 */
-            font-weight: bold;
-            color: #444;
-        }
-    </style>
+    <title>自己紹介 - 山田太郎</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>自己紹介</h1>
+    <main class="container">
+        <header class="profile-header">
+            <h1>自己紹介</h1>
+        </header>
 
-        <div class="profile-item">
-            <strong>名前：</strong>
-            <span>YMD</span>
-        </div>
+        <section class="profile-section basic-info">
+            <h2>基本情報</h2>
+            <div class="profile-item">
+                <span class="label">名前：</span>
+                <span class="value">山田 太郎 (Yamada Taro)</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">所属：</span>
+                <span class="value">株式会社〇〇 / △△部</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">メール：</span>
+                <span class="value">taro.yamada@example.com</span>
+            </div>
+        </section>
 
-        <div class="profile-item">
-            <strong>所属：</strong>
-            <span>株式会社日本大学</span>
-        </div>
+        <section class="profile-section greeting">
+            <h2>ご挨拶</h2>
+            <p>
+                はじめまして、山田太郎と申します。<br>
+                〇〇株式会社で△△部に所属しており、主に□□業務に携わっております。<br>
+                新しい技術や情報に常にアンテナを張り、日々の業務に活かせるよう努めています。
+            </p>
+        </section>
 
-        <div class="profile-item">
-            <strong>メール：</strong>
-            <span>taro.yamada@example.com</span>
-        </div>
+        <section class="profile-section skills">
+            <h2>スキル</h2>
+            <ul>
+                <li>プログラミング言語：Python, JavaScript, HTML/CSS</li>
+                <li>フレームワーク：React, Django</li>
+                <li>その他：データベース設計, UI/UXデザインの基礎知識</li>
+            </ul>
+        </section>
 
-        <h2>ご挨拶</h2>
-        <p>
-            はじめまして、YMDと申します。<br>
-            〇〇株式会社で△△部に所属しており、主にわーわー業務に携わっております。<br>
-            新しい技術や情報に常にアンテナを張り、日々の業務に活かせるよう努めています。
-        </p>
+        <section class="profile-section hobbies">
+            <h2>趣味・特技</h2>
+            <ul>
+                <li>読書（主にビジネス書や小説）</li>
+                <li>週末のサイクリング</li>
+                <li>写真撮影（風景写真）</li>
+            </ul>
+        </section>
 
-        <h2>スキル</h2>
-        <ul>
-            <li>プログラミング言語：Python, JavaScript, HTML/CSS</li>
-            <li>フレームワーク：React, Django</li>
-            <li>その他：データベース設計, UI/UXデザインの基礎知識</li>
-        </ul>
-
-        <h2>趣味・特技</h2>
-        <ul>
-            <li>読書（主にビジネス書や小説）</li>
-            <li>週末のサイクリング</li>
-            <li>写真撮影（風景写真）</li>
-        </ul>
-
-        <h2>ひとこと</h2>
-        <p>
-            持ち前の探求心とコミュニケーション能力を活かして、チームに貢献していきたいと考えております。<br>
-            どうぞよろしくお願いいたします。
-        </p>
-    </div>
+        <section class="profile-section closing-message">
+            <h2>ひとこと</h2>
+            <p>
+                持ち前の探求心とコミュニケーション能力を活かして、チームに貢献していきたいと考えております。<br>
+                どうぞよろしくお願いいたします。
+            </p>
+        </section>
+    </main>
 </body>
 </html>
